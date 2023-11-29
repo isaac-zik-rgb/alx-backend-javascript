@@ -7,7 +7,7 @@ export default async function getFullResponseFromAPI(success) {
       };
       resolve(response);
     } else {
-      reject(new Error({ Erro: 'The fake API is not working currently' }));
+      reject(new Error( 'The fake API is not working currently' ));
     }
   }).then((message) => message).catch((error) => error);
 }
