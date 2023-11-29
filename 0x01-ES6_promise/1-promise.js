@@ -1,5 +1,5 @@
-export default function getFullResponseFromAPI(success) {
-  return new Promise((resolve, reject) => {
+export default async function getFullResponseFromAPI(success) {
+  return  new Promise((resolve, reject) => {
     if (success) {
       const response = {
         status: 200,
