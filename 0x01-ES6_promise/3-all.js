@@ -6,7 +6,8 @@ export default function handleProfileSignup() {
       const profile = photoMwessage.body;
 
       return createUser().then((userMessage) => {
-        console.log(profile, userMessage.firstName, userMessage.lastName);
+        const username = ` ${userMessage.firstName} ${userMessage.lastName}`;
+        console.log(profile, username);
       });
     })
     .catch(() => {
