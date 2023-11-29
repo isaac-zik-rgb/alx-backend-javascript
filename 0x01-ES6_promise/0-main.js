@@ -33,7 +33,7 @@ console.log(uploadPhoto('guillaume.jpg'));
 import handleProfileSignup from './6-final-user';
 
 console.log(handleProfileSignup("Bob", "Dylan", "bob_dylan.jpg"));
-*/
+
 import loadBalancer from "./7-load_balancer";
 
 const ukSuccess = 'Downloading from UK is faster';
@@ -57,3 +57,9 @@ const test = async () => {
 }
 
 test();
+*/
+
+import divideFunction from './8-try';
+
+console.log(divideFunction(10, 2));
+console.log(divideFunction(10, 0));
