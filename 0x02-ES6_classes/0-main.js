@@ -29,8 +29,16 @@ try {
 catch(err) {
     console.log(err);
 }
-*/
+
 import Currency from "./3-currency.js";
 
 const dollar = new Currency('$', 'Dollars');
 console.log(dollar.displayFullCurrency());
+*/
+
+import Pricing from './4-pricing.js';
+import Currency from './3-currency.js';
+
+const p = new Pricing(100, new Currency("EUR", "Euro"))
+console.log(p);
+console.log(p.displayFullPrice());
