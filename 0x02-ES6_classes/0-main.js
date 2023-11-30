@@ -64,9 +64,15 @@ const building = new SkyHighBuilding(140, 60);
 console.log(building.sqft);
 console.log(building.floors);
 console.log(building.evacuationWarningMessage());
-*/
+
 import Airport from "./7-airport.js";
 
 const airportSF = new Airport('San Francisco Airport', 'SFO');
 console.log(airportSF);
 console.log(airportSF.toString());
+*/
+import HolbertonClass from "./8-hbtn_class.js";
+
+const hc = new HolbertonClass(12, "Mezzanine")
+console.log(Number(hc));
+console.log(String(hc));
