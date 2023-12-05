@@ -52,10 +52,30 @@ console.log(cleanSet(new Set(['bonjovi', 'bonaparte', 'bonappetit', 'banana']), 
 import groceriesList from "./9-groceries_list.js";
 
 console.log(groceriesList());
-*/
+
 import updateUniqueItems from "./10-update_uniq_items.js";
 import groceriesList from "./9-groceries_list.js";
 
 const map = groceriesList();
 console.log(map);
 console.log(updateUniqueItems(map));
+*/
+
+
+
+
+import { queryAPI, weakMap } from "./100-weak.js";
+
+const endpoint = { protocol: 'http', name: 'getUsers' };
+weakMap.get(endpoint);
+
+queryAPI(endpoint);
+console.log(weakMap.get(endpoint));
+
+queryAPI(endpoint);
+console.log(weakMap.get(endpoint));
+
+queryAPI(endpoint);
+queryAPI(endpoint);
+queryAPI(endpoint);
+queryAPI(endpoint);
