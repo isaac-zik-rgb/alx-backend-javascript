@@ -18,4 +18,13 @@ const printTeacher: printTeacherFunction = (firstName: string, lastName: string)
     return `${firstName.charAt(0)}. ${lastName}`;
 }
 
- // console.log(printTeacher("John", "Doe"));
+ class StudentClass {
+    firstName: string;
+    lastName: string;
+    workOnHomework() {
+        return 'Currently working';
+    }
+    displayName() {
+        return this.firstName;
+    }
+}
