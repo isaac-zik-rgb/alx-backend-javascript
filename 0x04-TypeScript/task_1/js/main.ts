@@ -19,8 +19,8 @@ const printTeacher: printTeacherFunction = (firstName: string, lastName: string)
 }
 
  class StudentClass {
-    firstName: string;
-    lastName: string;
+    readonly firstName: string;
+    readonly lastName: string;
     workOnHomework() {
         return 'Currently working';
     }
