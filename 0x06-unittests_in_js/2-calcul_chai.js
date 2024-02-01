@@ -6,7 +6,7 @@ function calculateNumber(type, a, b) {
         if (Math.round(b) === 0) {
             return 'Error';
         }
-        return (Math.round(a) / Math.round(b)).toFixed(2);
+        return (Math.round(a) / Math.round(b));
     }
     return (Math.round(a) + Math.round(b));
 }
